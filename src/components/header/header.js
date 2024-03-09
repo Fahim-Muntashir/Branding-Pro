@@ -2,17 +2,18 @@ import { Container, Flex, Button, Box } from "theme-ui";
 import { keyframes } from "@emotion/react";
 import { Link } from "react-scroll";
 import Logo from "components/logo";
-import LogoDark from "assets/logo.svg";
+import Logo1 from "assets/logo.svg";
 import { DrawerProvider } from "../../contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
+import Image from "next/image";
 
 export default function Header({ className }) {
   return (
     <DrawerProvider>
       <Box sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={LogoDark} />
+          <Image src={Logo1} alt="Logo" />
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
