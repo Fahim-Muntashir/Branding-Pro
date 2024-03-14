@@ -96,9 +96,9 @@ const data = [
   {
     id: 4,
     imgSrc: Member4,
-    altText: "Ashraful Hossen",
-    title: "Ashraful Hossen",
-    designation: "Web Developer",
+    altText: "Ahad Ahamed Akash",
+    title: "Ahad Ahamed Akash",
+    designation: "Frontend Developer",
     socialProfile: [
       {
         id: 1,
@@ -124,8 +124,8 @@ const data = [
     id: 5,
     imgSrc: Member5,
     altText: "Mauricette Mayme",
-    title: "Mauricette Mayme",
-    designation: "CEO and Founder",
+    title: "Backend Developer",
+    designation: "Backend Developer",
     socialProfile: [
       {
         id: 1,
@@ -149,10 +149,10 @@ const data = [
   },
   {
     id: 6,
-    imgSrc: Member3,
-    altText: "Fahim Muntashir",
-    title: "Madyson Elmo",
-    designation: "Web Designer",
+    imgSrc: Member1,
+    altText: "Eleyas Hasan",
+    title: "Eleyas Hasan",
+    designation: "Ui & UX designer",
     socialProfile: [
       {
         id: 1,
