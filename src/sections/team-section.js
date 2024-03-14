@@ -1,39 +1,40 @@
-import { Box, Container, Grid } from 'theme-ui';
-import SectionHeader from 'components/section-header';
-import TeamCard from 'components/team-card';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { Box, Container, Grid } from "theme-ui";
+import SectionHeader from "components/section-header";
+import TeamCard from "components/team-card";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { AiOutlineGlobal } from "react-icons/ai";
 
-import Member3 from 'assets/team/member-1.png';
-import Member5 from 'assets/team/member-2.png';
-import Member6 from 'assets/team/member-3.png';
-import Member1 from 'assets/team/member-4.png';
-import Member4 from 'assets/team/member-5.png';
-import Member2 from 'assets/team/member-6.png';
+import Member3 from "assets/team/member-1.png";
+import Member5 from "assets/team/member-2.png";
+import Member6 from "assets/team/member-3.png";
+import Member1 from "assets/team/member-4.png";
+import Member4 from "assets/team/member-5.png";
+import Member2 from "assets/team/member-6.png";
 
 const data = [
   {
     id: 1,
-    imgSrc: Member1,
-    altText: 'Mauricette Mayme',
-    title: 'Mauricette Mayme',
-    designation: 'CEO and Founder',
+    imgSrc: Member3,
+    altText: "Habiba Sultana",
+    title: "Habiba Sultana",
+    designation: "Project Manager",
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
+        name: "facebook",
+        path: "#",
         icon: <FaFacebookF />,
       },
       {
         id: 2,
-        name: 'twitter',
-        path: '#',
+        name: "twitter",
+        path: "#",
         icon: <FaTwitter />,
       },
       {
         id: 3,
-        name: 'instagram',
-        path: '#',
+        name: "instagram",
+        path: "#",
         icon: <FaInstagram />,
       },
     ],
@@ -41,53 +42,53 @@ const data = [
   {
     id: 2,
     imgSrc: Member2,
-    altText: 'Madyson Elmo',
-    title: 'Madyson Elmo',
-    designation: 'Founder',
+    altText: "Fahim Muntashir",
+    title: "Fahim Muntashir",
+    designation: "Founder & CEO",
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
+        name: "facebook",
+        path: "#",
         icon: <FaFacebookF />,
       },
       {
         id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
+        name: "website",
+        path: "https://fahimmuntashir.net/",
+        icon: <AiOutlineGlobal />,
       },
       {
         id: 3,
-        name: 'instagram',
-        path: '#',
+        name: "instagram",
+        path: "#",
         icon: <FaInstagram />,
       },
     ],
   },
   {
     id: 3,
-    imgSrc: Member3,
-    altText: 'Madyson Elmo',
-    title: 'Madyson Elmo',
-    designation: 'Web Designer',
+    imgSrc: Member6,
+    altText: "Ashraful Hossen",
+    title: "Ashraful Hossen",
+    designation: "Wordpress Developer",
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
+        name: "facebook",
+        path: "#",
         icon: <FaFacebookF />,
       },
       {
         id: 2,
-        name: 'twitter',
-        path: '#',
+        name: "twitter",
+        path: "#",
         icon: <FaTwitter />,
       },
       {
         id: 3,
-        name: 'instagram',
-        path: '#',
+        name: "instagram",
+        path: "#",
         icon: <FaInstagram />,
       },
     ],
@@ -95,26 +96,26 @@ const data = [
   {
     id: 4,
     imgSrc: Member4,
-    altText: 'Sharalyn Charmaine',
-    title: 'Sharalyn Charmaine',
-    designation: 'Web Developer',
+    altText: "Ashraful Hossen",
+    title: "Ashraful Hossen",
+    designation: "Web Developer",
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
+        name: "facebook",
+        path: "#",
         icon: <FaFacebookF />,
       },
       {
         id: 2,
-        name: 'twitter',
-        path: '#',
+        name: "twitter",
+        path: "#",
         icon: <FaTwitter />,
       },
       {
         id: 3,
-        name: 'instagram',
-        path: '#',
+        name: "instagram",
+        path: "#",
         icon: <FaInstagram />,
       },
     ],
@@ -122,53 +123,53 @@ const data = [
   {
     id: 5,
     imgSrc: Member5,
-    altText: 'Mauricette Mayme',
-    title: 'Mauricette Mayme',
-    designation: 'CEO and Founder',
+    altText: "Mauricette Mayme",
+    title: "Mauricette Mayme",
+    designation: "CEO and Founder",
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
+        name: "facebook",
+        path: "#",
         icon: <FaFacebookF />,
       },
       {
         id: 2,
-        name: 'twitter',
-        path: '#',
+        name: "twitter",
+        path: "#",
         icon: <FaTwitter />,
       },
       {
         id: 3,
-        name: 'instagram',
-        path: '#',
+        name: "instagram",
+        path: "#",
         icon: <FaInstagram />,
       },
     ],
   },
   {
     id: 6,
-    imgSrc: Member6,
-    altText: 'Madyson Elmo',
-    title: 'Madyson Elmo',
-    designation: 'Web Designer',
+    imgSrc: Member3,
+    altText: "Fahim Muntashir",
+    title: "Madyson Elmo",
+    designation: "Web Designer",
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
+        name: "facebook",
+        path: "#",
         icon: <FaFacebookF />,
       },
       {
         id: 2,
-        name: 'twitter',
-        path: '#',
+        name: "twitter",
+        path: "#",
         icon: <FaTwitter />,
       },
       {
         id: 3,
-        name: 'instagram',
-        path: '#',
+        name: "instagram",
+        path: "#",
         icon: <FaInstagram />,
       },
     ],
@@ -204,13 +205,13 @@ export default function TeamSection() {
 const styles = {
   grid: {
     mt: [0, null, -6, null, -4],
-    gridGap: ['35px 0px', null, 0, null, null, '30px 35px'],
+    gridGap: ["35px 0px", null, 0, null, null, "30px 35px"],
     gridTemplateColumns: [
-      'repeat(2,1fr)',
+      "repeat(2,1fr)",
       null,
-      'repeat(2,1fr)',
+      "repeat(2,1fr)",
       null,
-      'repeat(3,1fr)',
+      "repeat(3,1fr)",
     ],
   },
 };
