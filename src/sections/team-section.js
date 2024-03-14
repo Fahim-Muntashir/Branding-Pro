@@ -98,7 +98,7 @@ const data = [
     imgSrc: Member4,
     altText: "Ahad Ahamed Akash",
     title: "Ahad Ahamed Akash",
-    designation: "Frontend Developer",
+    designation: "Frontend Developer (MERN Stack)",
     socialProfile: [
       {
         id: 1,
@@ -123,9 +123,9 @@ const data = [
   {
     id: 5,
     imgSrc: Member5,
-    altText: "Mauricette Mayme",
-    title: "Backend Developer",
-    designation: "Backend Developer",
+    altText: "Sabbir Hossain",
+    title: "Sabbir Hossain",
+    designation: "Backend Developer (MERN Stack)",
     socialProfile: [
       {
         id: 1,
