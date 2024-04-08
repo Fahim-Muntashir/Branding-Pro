@@ -14,6 +14,7 @@ import TeamSection from "sections/team-section";
 import TestimonialCard from "sections/testimonial";
 import BlogSection from "sections/blog-section";
 import Subscribe from "sections/subscribe";
+import Contact from "sections/contact";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
           <Package />
           <TeamSection />
           <TestimonialCard />
+          <Contact></Contact>
           <BlogSection />
           <Subscribe />
         </Layout>

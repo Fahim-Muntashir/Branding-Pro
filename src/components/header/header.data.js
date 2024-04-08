@@ -16,7 +16,11 @@ export default [
     label: "Testimonial",
   },
   {
-    path: "agency",
-    label: "Smart Agency",
+    path: "contact",
+    label: "Contact",
   },
+  // {
+  //   path: "agency",
+  //   label: "Smart Agency",
+  // },
 ];
