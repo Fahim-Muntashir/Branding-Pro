@@ -115,39 +115,6 @@ export default function Subscribe() {
                     : "Submitting..."}
                 </Button>
               </Flex>
-              <Flex sx={styles.subscribeForm}>
-                <Box htmlFor="email" sx={{ variant: "styles.srOnly" }}>
-                  Email Address
-                </Box>
-                <Input
-                  ref={inputEl}
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Enter your email address"
-                />
-
-                <div>
-                  {status.info.error && (
-                    <div className="error">Error: {status.info.msg}</div>
-                  )}
-                  {!status.info.error && status.info.msg && (
-                    <div className="success">{status.info.msg}</div>
-                  )}
-                </div>
-                <Button
-                  type="submit"
-                  disabled={status.submitting}
-                  className="subscribe__btn"
-                  aria-label="Subscribe"
-                >
-                  {!status.submitting
-                    ? !status.submitted
-                      ? "Subscribe"
-                      : "Submitted"
-                    : "Submitting..."}
-                </Button>
-              </Flex>
             </form>
           </Box>
         </Box>

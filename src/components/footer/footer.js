@@ -14,7 +14,11 @@ export default function Footer() {
               key={`footer-widget--key${item.id}`}
               sx={styles.widgets.widgetItem}
             >
-              <Image src={item.iconSrc} alt={item.altText} />
+              <Image
+                className="mx-auto"
+                src={item.iconSrc}
+                alt={item.altText}
+              />
               <Box sx={styles.widgets.infoWrapper}>
                 <Heading as="h3">{item.title}</Heading>
                 <Text as="p">{item.description}</Text>
@@ -25,7 +29,11 @@ export default function Footer() {
         {/* End of footer widgets area */}
         <Box sx={styles.footer.footerBottomArea}>
           <Link path="/">
-            <Image src={FooterLogo} alt="Logo" />
+            <Image
+              src={FooterLogo}
+              className="text-center mx-auto"
+              alt="Logo"
+            />
           </Link>
           <Box sx={styles.footer.menus}>
             <nav>
@@ -40,7 +48,7 @@ export default function Footer() {
             </nav>
           </Box>
           <Text sx={styles.footer.copyright}>
-            Copyright by {new Date().getFullYear()} Lorem Ipsum
+            Copyright by {new Date().getFullYear()} Massive Growth
           </Text>
         </Box>
       </Container>
