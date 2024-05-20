@@ -13,7 +13,7 @@ export default function Header({ className }) {
     <DrawerProvider>
       <Box sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Image src={Logo1} alt="Logo" />
+          <Image src={Logo1} alt="Logo" height={60} />
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
