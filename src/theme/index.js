@@ -63,7 +63,7 @@ export default {
         null,
         "780px",
         "1020px",
-        "1200px",
+        "1250px",
         null,
         "1310px",
       ],

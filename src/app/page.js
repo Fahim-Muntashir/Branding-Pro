@@ -14,6 +14,7 @@ import TeamSection from "sections/team-section";
 import TestimonialCard from "sections/testimonial";
 
 import Contact from "sections/contact";
+import Meet from "components/Meet";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           {/* <Feature /> */}
           <CoreFeature />
           <WorkFlow />
+          <Meet />
           {/* <Package /> */}
           <TeamSection />
           <TestimonialCard />

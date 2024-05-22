@@ -1,137 +1,41 @@
-import React, { useState } from "react";
-import { Container, Box, Grid, Text, Heading } from "theme-ui";
 import Image from "next/image";
-import { keyframes } from "@emotion/react";
-import TextFeature from "components/text-feature";
+import React from "react";
+import { Container } from "theme-ui";
+import youtube from "../assets/youtube.png";
 
-import ServiceThumb from "../assets/service-thumb.png";
-import shapePattern from "../assets/shape-pattern1.png";
-
-import Smart from "../assets/services/smart.svg";
-import Secure from "../assets/services/secure.svg";
-
-const data = {
-  subTitle: "our philosophy",
-  title: "Business Goals Achieved with Design",
-};
-
-export default function ServiceSection() {
+const service = () => {
   return (
-    <Box sx={{ variant: "section.services" }}>
-      <Container sx={styles.containerBox}>
-        <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt="Thumbnail" />
-          <Box sx={styles.shapeBox}>
-            <Image src={shapePattern} alt="Shape" />
-          </Box>
-        </Box>
-        <Box sx={styles.contentBox}>
-          <TextFeature subTitle={data.subTitle} title={data.title} />
-
-          <Grid sx={styles.grid}>
-            <p></p>
-          </Grid>
-        </Box>
-      </Container>
-    </Box>
+    <Container>
+      <div className="lg:flex justify-between my-20">
+        <div className="lg:w-2/5">
+          <Image src={youtube} className="rounded-sm"></Image>
+        </div>
+        <div className="w-1/2">
+          <h1 className="text-lg text-fuchsia-600 font-bold">Our Philosophy</h1>
+          <h2 className="text-4xl font-bold text-black mb-3 font-sans">
+            Business Goals Achieved with this Design
+          </h2>
+          <p>
+            In today's digital landscape🌎, content is king, and video reigns
+            supreme. 🎥Short-form video content is the go-to medium for engaging
+            audiences and showcasing products. At Branding Proo, we create
+            high-quality, attention-grabbing videos tailored to your target
+            audience, designed to captivate viewers and ignite virality.
+            <br />
+            We also design seamless, user-centric websites optimized to convert
+            visitors into loyal customers. As your growth partners, we leverage
+            our proven track record and innovative strategies to transform your
+            ideas into tangible results, fueling your journey to success.
+          </p>
+          <button className="bg-fuchsia-600 py-2 hover:shadow-lg hover:shadow-fuchsia-600 rounded-full mt-4 px-6 text-xl font-bold transition-all text-white">
+            Speak with our Experts today
+            <br />
+            <p className="text-lg font-normal">Call for free feedback</p>
+          </button>
+        </div>
+      </div>
+    </Container>
   );
-}
-
-const styles = {
-  coreFeature: {
-    py: [0, null, null, 2, null, 7],
-    position: "relative",
-  },
-  containerBox: {
-    pt: 50,
-    display: "flex",
-    alignItems: ["flex-start", null, null, "center"],
-    justifyContent: ["flex-start", null, null, "space-between"],
-    flexDirection: ["column", null, null, "row"],
-    pb: [0, null, null, null, null, 7],
-  },
-  thumbnail: {
-    mr: ["auto", null, null, 6, 60, 85],
-    order: [2, null, null, 0],
-    ml: ["auto", null, null, 0],
-    display: "inline-flex",
-    width: "100%",
-    position: "relative",
-    "> img": {
-      position: "relative",
-      zIndex: 1,
-      height: "90%",
-      width: "90%",
-    },
-  },
-  shapeBox: {
-    position: "absolute",
-    bottom: -68,
-    left: -160,
-    zIndex: -1,
-    display: ["none", null, null, null, null, "inline-block"],
-  },
-
-  contentBox: {
-    width: ["100%", null, null, 315, 390, 450, null, 500],
-    flexShrink: 0,
-    mb: [7, null, 60, 0],
-    textAlign: ["center", null, null, "left"],
-  },
-  grid: {
-    pr: [2, 0, null, null, 6, "70px"],
-    pl: [2, 0],
-    pt: [2, null, null, null, 3],
-    mx: "auto",
-    width: ["100%", 370, 420, "100%"],
-    gridGap: ["35px 0", null, null, null, "50px 0"],
-    gridTemplateColumns: ["repeat(1,1fr)"],
-  },
-  card: {
-    display: "flex",
-    alignItems: "flex-start",
-    transition: "all 0.3s",
-  },
-
-  icon: {
-    flexShrink: 0,
-    marginRight: "10px",
-  },
-  wrapper: {
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
-    textAlign: "left",
-    mt: "-5px",
-    title: {
-      fontSize: 3,
-      color: "heading_secondary",
-      lineHeight: 1.4,
-      fontWeight: 700,
-      mb: [2, null, 3, 2, 3],
-    },
-
-    subTitle: {
-      fontSize: [1, null, null, "14px", 1],
-      fontWeight: 400,
-      lineHeight: 1.9,
-    },
-  },
-  videoWrapper: {
-    maxWidth: "100%",
-    position: "relative",
-    width: "900px",
-    "&:before": {
-      content: '""',
-      display: "block",
-      paddingTop: "56.25%",
-    },
-    iframe: {
-      width: "100%",
-      height: "100%",
-      position: "absolute",
-      top: 0,
-      left: 0,
-    },
-  },
 };
+
+export default service;
