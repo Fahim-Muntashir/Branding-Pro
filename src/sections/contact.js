@@ -4,7 +4,10 @@ import { Container } from "theme-ui";
 const Contact = () => {
   return (
     <Container>
-      <section class="relative z-10 overflow-hidden  dark:bg-dark py-20 lg:py-[120px]">
+      <section
+        class="relative z-10 overflow-hidden  dark:bg-dark py-20 lg:py-[120px]"
+        id="contact"
+      >
         <div class="container mx-auto">
           <div class="flex flex-wrap -mx-4 lg:justify-between">
             <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -109,8 +112,8 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div class="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
+            <div class="w-full px-1 lg:w-1/2 xl:w-5/12">
+              <div class="relative p-2 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
                 <form>
                   <div class="mb-6">
                     <input
@@ -143,7 +146,7 @@ const Contact = () => {
                   <div>
                     <button
                       type="submit"
-                      class="w-full p-3 text-[#B679E9] transition border border-[#B679E9] rounded border-primary bg-primary hover:bg-opacity-90"
+                      class="w-full p-3 font-semibold tracking- text-[#fff] transition  rounded border-primary bg-fuchsia-600 hover:bg-opacity-90"
                     >
                       Send Message
                     </button>
@@ -162,7 +165,7 @@ const Contact = () => {
                         fill-rule="evenodd"
                         clip-rule="evenodd"
                         d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
-                        fill="#3056D3"
+                        fill="#c026d4"
                       />
                     </svg>
                   </span>

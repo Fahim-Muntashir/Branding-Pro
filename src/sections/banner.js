@@ -1,81 +1,52 @@
-import { Container, Box, Heading, Text, Button } from "theme-ui";
-import ShapeLeft from "assets/shape-left.png";
-import ShapeRight from "assets/shape-right.png";
+import Image from "next/image";
+import React from "react";
+import { Container } from "theme-ui";
+import bannerImg from "assets/cover.webp";
 
-export default function Banner() {
+const banner = () => {
   return (
-    <Box sx={styles.banner} id="home">
-      <Container sx={styles.banner.container}>
-        <Box sx={styles.banner.contentBox}>
-          <Heading as="h1" variant="heroPrimary">
-            Transform Your Digital Agency for Massive Profitability!
-          </Heading>
-          <Text as="p" variant="heroSecondary">
-            Elevate your agency's profitability with our video editing and web
-            development expertise. Transform your digital presence now!
-          </Text>
-          <Button variant="primary">Explore</Button>
-        </Box>
-
-        <Box sx={styles.banner.imageBox}></Box>
-      </Container>
-    </Box>
+    <section className="" id="home">
+      <div
+        style={{
+          backgroundImage:
+            "url(https://i.ibb.co/HqNCcd3/Untitled-design-1.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className=" text-white lg:h-screen"
+      >
+        <Container>
+          <div className="md:flex justify-between pt-40">
+            <div className="my-0  pb-20 md:w-2/4">
+              <h5 className="text-3xl font-extrabold tracking-wide font">
+                MODERN DAY ALCHEMY
+              </h5>
+              <h1 className="text-4xl font-extrabold mt-2 text-[#FC3792]">
+                We Help E-commerce & Info Product Businesses Produce
+                Spine-Chilling ROI Via Paid Advertising
+              </h1>
+              <p className="text-xl tracking-widest mt-4">
+                Stop wasting time and money on faulty and ineffective ad
+                campaigns.
+              </p>
+              <p className="mt-4 text-xl tracking-widest">
+                It's time to make your ad-budget count, scale your business and
+                blow up your sales.
+              </p>
+              <button className="bg-fuchsia-600 py-2 hover:shadow-lg hover:shadow-fuchsia-600 rounded-full mt-4 px-6 text-xl font-bold transition-all">
+                Speak with our Experts today
+                <br />
+                <p className="text-lg font-normal">Call for free feedback</p>
+              </button>
+            </div>
+            <div>
+              <Image src={bannerImg} width={400} height={400} alt="" />
+            </div>
+          </div>
+        </Container>
+      </div>
+    </section>
   );
-}
-
-const styles = {
-  banner: {
-    pt: ["140px", "145px", "155px", "170px", null, null, "180px", "215px"],
-    pb: [2, null, 0, null, 2, 0, null, 5],
-    position: "relative",
-    zIndex: 2,
-    "&::before": {
-      position: "absolute",
-      content: '""',
-      bottom: "-80px",
-      left: 0,
-      height: "100%",
-      width: "100%",
-      zIndex: -1,
-      backgroundImage: `url(${ShapeLeft.src})`,
-      backgroundRepeat: `no-repeat`,
-      backgroundPosition: "bottom left",
-      backgroundSize: "25%",
-    },
-    "&::after": {
-      position: "absolute",
-      content: '""',
-      bottom: "-20px",
-      right: 0,
-      height: "100%",
-      width: "100%",
-      zIndex: -1,
-      backgroundImage: `url(${ShapeRight.src})`,
-      backgroundRepeat: `no-repeat`,
-      backgroundPosition: "bottom right",
-      backgroundSize: "25%",
-    },
-    container: {
-      minHeight: "inherit",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-    },
-    contentBox: {
-      width: ["100%", "90%", "535px", null, "57%", "60%", "68%", "60%"],
-      mx: "auto",
-      textAlign: "center",
-      mb: ["40px", null, null, null, null, 7],
-    },
-    imageBox: {
-      justifyContent: "center",
-      textAlign: "center",
-      display: "inline-flex",
-      mb: [0, null, -6, null, null, "-40px", null, -3],
-      img: {
-        position: "relative",
-        height: [245, "auto"],
-      },
-    },
-  },
 };
+
+export default banner;

@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "react-multi-carousel/lib/styles.css";
 import "rc-drawer/assets/index.css";
-const inter = Inter({ subsets: ["latin"] });
+const inter = Montserrat({ subsets: ["latin"] });
 import "./globals.css";
 export const metadata = {
   title: "Branding Proo",

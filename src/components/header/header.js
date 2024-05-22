@@ -1,8 +1,7 @@
 import { Container, Flex, Button, Box } from "theme-ui";
 import { keyframes } from "@emotion/react";
 import { Link } from "react-scroll";
-import Logo from "components/logo";
-import Logo1 from "assets/logo.svg";
+import Logo1 from "assets/logo1.svg";
 import { DrawerProvider } from "../../contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
@@ -31,11 +30,11 @@ export default function Header({ className }) {
             ))}
           </Flex>
           <Button
-            className="donate__btn"
+            className="donate__btn text-white"
             variant="secondary"
             aria-label="Get Started"
           >
-            Get Started
+            <p className="text-white">Get Started</p>{" "}
           </Button>
           <MobileDrawer />
         </Container>
@@ -59,14 +58,14 @@ const positionAnim = keyframes`
 
 const styles = {
   header: {
-    color: "text",
+    color: "white",
     fontWeight: "body",
     py: 4,
     width: "100%",
     position: "absolute",
     top: 0,
     left: 0,
-    backgroundColor: "white",
+    backgroundColor: "#0F0E24",
     transition: "all 0.4s ease",
     animation: `${positionAnim} 0.4s ease`,
     ".donate__btn": {
@@ -76,8 +75,8 @@ const styles = {
     },
     "&.sticky": {
       position: "fixed",
-      backgroundColor: "background",
-      color: "#000000",
+      backgroundColor: "#0F0E24",
+      color: "#0FFFF",
       boxShadow: "0 1px 2px rgba(0, 0, 0, 0.06)",
       py: 3,
       "nev > a": {
