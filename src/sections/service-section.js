@@ -6,7 +6,7 @@ import youtube from "../assets/youtube.png";
 const service = () => {
   return (
     <Container>
-      <div className="lg:flex justify-between my-20">
+      <div className="lg:flex justify-between my-20" id="about">
         <div className="lg:w-2/5">
           <Image src={youtube} className="rounded-sm"></Image>
         </div>

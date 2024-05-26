@@ -1,7 +1,36 @@
-import React from "react";
+"use client";
+
+import axios from "axios";
+import { useState } from "react";
 import { Container } from "theme-ui";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(formData);
+    try {
+      await axios.post(
+        "https://branding-pro.vercel.app/api/send-email",
+        formData
+      ); // Send form data to backend route for sending email
+      alert("Email sent successfully!"); // Show success message to user
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Failed to send email. Please try again later."); // Show error message to user
+    }
+  };
+
   return (
     <Container>
       <section
@@ -114,9 +143,12 @@ const Contact = () => {
             </div>
             <div class="w-full px-1 lg:w-1/2 xl:w-5/12">
               <div class="relative p-2 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div class="mb-6">
                     <input
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       type="text"
                       placeholder="Your Name"
                       class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
@@ -124,13 +156,20 @@ const Contact = () => {
                   </div>
                   <div class="mb-6">
                     <input
-                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="Your Email"
+                      type="email"
                       class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                      required
                     />
                   </div>
                   <div class="mb-6">
                     <input
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                       type="text"
                       placeholder="Your Phone"
                       class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
@@ -138,6 +177,9 @@ const Contact = () => {
                   </div>
                   <div class="mb-6">
                     <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
                       rows="6"
                       placeholder="Your Message"
                       class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
