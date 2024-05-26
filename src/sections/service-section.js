@@ -10,7 +10,7 @@ const service = () => {
         <div className="lg:w-2/5">
           <Image src={youtube} className="rounded-sm"></Image>
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2 mt-3">
           <h1 className="text-lg text-fuchsia-600 font-bold">Our Philosophy</h1>
           <h2 className="text-4xl font-bold text-black mb-3 font-sans">
             Business Goals Achieved with this Design
