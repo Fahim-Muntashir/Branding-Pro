@@ -22,16 +22,16 @@ const banner = () => {
                 MODERN DAY ALCHEMY
               </h5>
               <h1 className="text-4xl font-extrabold mt-2 text-[#FC3792]">
-                We Help E-commerce & Info Product Businesses Produce
-                Spine-Chilling ROI Via Paid Advertising
+                Boost Your Content to Top Online Rankings - We Help Creators &
+                Websites Succeed{" "}
               </h1>
               <p className="text-xl tracking-widest mt-4">
                 Stop wasting time and money on faulty and ineffective ad
                 campaigns.
               </p>
               <p className="mt-4 text-xl tracking-widest">
-                It's time to make your ad-budget count, scale your business and
-                blow up your sales.
+                It's time to reach the top using organic methods and iffective
+                ad, scale your business, and blow up your sales.
               </p>
               <button className="bg-fuchsia-600 py-2 hover:shadow-lg hover:shadow-fuchsia-600 rounded-full mt-4 px-6 text-xl font-bold transition-all">
                 Speak with our Experts today
