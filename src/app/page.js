@@ -11,7 +11,7 @@ import CoreFeature from "sections/core-feature";
 import WorkFlow from "sections/workflow";
 // import Package from "sections/package";
 import TeamSection from "sections/team-section";
-import TestimonialCard from "sections/testimonial";
+// import TestimonialCard from "sections/testimonial";
 
 import Contact from "sections/contact";
 import Meet from "components/Meet";
@@ -31,7 +31,7 @@ export default function Home() {
           <Meet />
           {/* <Package /> */}
           <TeamSection />
-          <TestimonialCard />
+          {/* <TestimonialCard />s */}
           <Contact></Contact>
         </Layout>
       </StickyProvider>
