@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP } from "react-icon
 import { BsYoutube } from 'react-icons/bs';
 import { FaXTwitter } from "react-icons/fa6";
 import Image from 'next/image';
-import logo from '../../../../public/assests/dark-logo.svg';
+import logo from '@/../public/assests/dark-logo.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
 import Link from 'next/link';
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <Container>
                     <div className='flex justify-between items-center py-2'>
                         <Link href='/'>
-                            <Image src={logo} width={250} height={80} alt='haven' />
+                            <Image src={logo} width={140} height={80} alt='haven' />
                         </Link>
                         <div className={`items-center justify-between hidden w-full md:flex md:w-auto`} id="navbar-sticky">
                             <ul className="flex text-dark flex-col p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
@@ -88,7 +88,7 @@ const Navbar = () => {
                         </div>
                         <div className='text-dark'>
                             <Link href="/#meet">
-                                <button className='btn-meet shadow-none'>Call Now</button>
+                                <button className='btn-meet shadow-none sm:text-lg'>Call Now</button>
                             </Link>
                             <button onClick={() => setOpen(true)} className={`text-2xl ${open ? "hidden" : ""} md:hidden px-3`}>
                                 <GiHamburgerMenu />

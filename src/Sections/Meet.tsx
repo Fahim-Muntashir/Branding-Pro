@@ -13,8 +13,9 @@ const Meet = () => {
                     {" "}
                     <Image
                         className="rounded-full border-4 border-fuchsia-600 object-cover"
-                        src={profileImg}
-                        width={130}
+                        src="https://i.ibb.co/7G8sbWR/Untitled-design-25.png"
+
+                        width={100}
                         height={100}
                         alt="profile"
                     ></Image>
