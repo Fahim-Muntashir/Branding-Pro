@@ -8,7 +8,7 @@ import Link from "next/link";
 const banner = () => {
     return (
         <div style={{
-            backgroundImage: "url('https://img.freepik.com/free-vector/textured-black-background_78370-339.jpg?t=st=1722579132~exp=1722582732~hmac=f77086a6e6da4fd5dba82b38e723eee351fa51ea03e54df7df7509cc8d4521d1&w=996')",
+            backgroundImage: "url('https://i.ibb.co/m5j8F2N/bg.jpg')",
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
         }}
