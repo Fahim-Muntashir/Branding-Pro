@@ -26,11 +26,11 @@ const Meet = () => {
                         </h2>
                     </div>
                     <p className="text-justify leading-6 ">
-                        Let's chat about maximizing your business or personal brand on
-                        YouTube. We'll cover scaling strategies, channel growth, video
-                        quality, and SEO optimization. By embracing feedback, you'll enhance
-                        output and engagement. Together, we'll unlock your channel's full
-                        potential. Let's get started!
+                        Let&apos;s chat about maximizing your business or personal brand on
+                        YouTube. We&apos;ll cover scaling strategies, channel growth, video
+                        quality, and SEO optimization. By embracing feedback, you&apos;ll enhance
+                        output and engagement. Together, we&apos;ll unlock your channel&apos;s full
+                        potential. Let&apos;s get started!
                     </p>{" "}
                     <div className="topic-benefits">
                         <div className="youtube-growth-benefits">
