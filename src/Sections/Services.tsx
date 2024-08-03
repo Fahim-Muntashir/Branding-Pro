@@ -1,6 +1,6 @@
 import Container from '@/Components/Shared/Container';
 import React from 'react';
-import website from '@/../public/assests/web.png'
+import website from '@/../public/assests/we.png'
 import seo from '@/../public/assests/seo.png'
 import bnd from '@/../public/assests/bnd.png'
 import Image from 'next/image';
@@ -128,9 +128,8 @@ const Services = () => {
 
                     </div>
 
-                    <div className="md:flex justify-between items-center">
-                        <div className="flex md:w-2/4 flex-col sm:flex-row">
-
+                    <div className="flex flex-col md:flex-row justify-between items-center">
+                        <div className="flex md:w-2/4 flex-col order-last md:order-1 sm:flex-row">
                             <div>
                                 <h6 className="mb-10 font-semibold text-4xl">
                                     Brand Identity Design
@@ -147,13 +146,6 @@ const Services = () => {
                                         With our brand identity design services, you receive a complete brand design that uniquely defines your business, including cohesive visual elements such as color schemes and typography.
 
                                         2/2
-
-
-
-
-
-
-
 
 
                                     </li>
@@ -177,13 +169,10 @@ const Services = () => {
 
                                     </li>
                                 </ul>
-                                <a href="/" aria-label=""
-                                    className="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-green-800">Learn
-                                    more
-                                </a>
+
                             </div>
                         </div>
-                        <div className='md:2/4'>
+                        <div className='md:2/4 order-1 md:order-2 mb-10 md:sm-0'>
                             <Image src={bnd} alt="Brand Identity Design Cover" width="550" height="400"></Image>
                         </div>
                     </div>

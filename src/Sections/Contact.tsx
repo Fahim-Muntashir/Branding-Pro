@@ -44,13 +44,13 @@ const Contact = () => {
                                 <span className="block mb-4 text-base font-semibold text-primary">
                                     Contact Us
                                 </span>
-                                <h2 className="text-dark dark:text-white mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                                <h2 className=" mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                                     GET IN TOUCH WITH US
                                 </h2>
                                 <p className="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eius tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim adiqua minim veniam quis nostrud exercitation ullamco
+                                    We&apos;re here to help you elevate your brand and reach new heights. Whether you have a project in mind, need a consultation, or just want to learn more about our services, we re ready to connect. Our team of experts is eager to collaborate with you and turn your vision into reality.
+
+
                                 </p>
                                 <div className="mb-8 flex w-full max-w-[370px]">
                                     <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
@@ -68,11 +68,11 @@ const Contact = () => {
                                         </svg>
                                     </div>
                                     <div className="w-full">
-                                        <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                                        <h4 className="mb-1 text-xl font-bold">
                                             Our Location
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                                            Omaha U.S. state of Nebraska
                                         </p>
                                     </div>
                                 </div>
@@ -107,11 +107,11 @@ const Contact = () => {
                                         </svg>
                                     </div>
                                     <div className="w-full">
-                                        <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                                        <h4 className="mb-1 text-xl font-bold ">
                                             Phone Number
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            (+62)81 414 257 9980
+                                            +880 198774 4337
                                         </p>
                                     </div>
                                 </div>
@@ -131,11 +131,11 @@ const Contact = () => {
                                         </svg>
                                     </div>
                                     <div className="w-full">
-                                        <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                                        <h4 className="mb-1 text-xl font-bold ">
                                             Email Address
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            info@yourdomain.com
+                                            info@brandingproo.com
                                         </p>
                                     </div>
                                 </div>
@@ -181,13 +181,13 @@ const Contact = () => {
                                             value={formData.message}
                                             onChange={handleChange}
                                             placeholder="Your Message"
-                                            className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
+                                            className="border-stroke text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
                                         ></textarea>
                                     </div>
                                     <div>
                                         <button
                                             type="submit"
-                                            className="w-full p-3 font-semibold tracking- text-[#fff] transition  rounded border-primary bg-fuchsia-600 hover:bg-opacity-90"
+                                            className="w-full p-3 font-semibold tracking- text-[#fff] transition  rounded border-2 border-primary bg-second hover:bg-opacity-90"
                                         >
                                             Send Message
                                         </button>
@@ -206,7 +206,7 @@ const Contact = () => {
                                                 fill-rule="evenodd"
                                                 clip-rule="evenodd"
                                                 d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
-                                                fill="#c026d4"
+                                                fill="#3AE62B"
                                             />
                                         </svg>
                                     </span>

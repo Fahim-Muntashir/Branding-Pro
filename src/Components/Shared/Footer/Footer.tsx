@@ -1,4 +1,4 @@
-import logo from '../../../../public/assests/logo.svg'
+import logo from '../../../../public/assests/dark-logo.svg'
 import Image from 'next/image';
 import Container from '../Container';
 

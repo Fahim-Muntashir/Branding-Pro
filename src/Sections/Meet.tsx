@@ -12,7 +12,7 @@ const Meet = () => {
                 <div className="lg:w-2/5 lg:ps-10 px-12 shrink order-1">
                     {" "}
                     <Image
-                        className="rounded-full border-4 border-fuchsia-600 object-cover"
+                        className="rounded-full border-4 border-primary object-cover"
                         src="https://i.ibb.co/7G8sbWR/Untitled-design-25.png"
 
                         width={100}
@@ -22,7 +22,7 @@ const Meet = () => {
                     <div className="my-3">
                         {" "}
                         <h1 className="text-3xl font-bold">Book A free Call with Fahim</h1>
-                        <h2 className="text-2xl font-bold text-[#FC3792] ">
+                        <h2 className="text-2xl font-bold text-primary ">
                             15 min Free Consaltation
                         </h2>
                     </div>
