@@ -42,49 +42,39 @@ const Services = () => {
 
 
                     <div class="md:flex justify-between items-center">
+                        <div class="flex md:w-2/4 flex-col sm:flex-row">
 
-                        <div class="flex flex-col sm:flex-row">
-                            <div class="sm:mr-4">
-                                <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-green-50">
-                                    <svg class="w-12 h-12 text-green-400" stroke="currentColor" viewBox="0 0 52 52">
-                                        <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                                            points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                                    </svg>
-                                </div>
-                            </div>
                             <div>
-                                <h6 class="mb-2 font-semibold leading-5">Website Development:</h6>
-                                <p class="mb-3 text-sm text-gray-900">
-                                    Our website development service offers end-to-end solutions for creating and launching professional
-                                    and visually appealing websites.
-                                </p>
+                                <h6 class="mb-10 font-semibold leading-5 text-4xl">Website Development</h6>
+
                                 <ul class="mb-4 -ml-1 space-y-2">
-                                    <li class="flex items-start">
+                                    <li class="flex items-start text-2xl text-gray-700">
                                         <span class="mr-1">
-                                            <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                            <svg class="w-10 h-10 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
                                                 <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
                                                     points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                                             </svg>
                                         </span>
-                                        Computers
+                                        Our website development service offers end-to-end  professional
+                                        and visually appealing websites.
                                     </li>
-                                    <li class="flex items-start">
+                                    <li class="flex items-start text-2xl my-3">
                                         <span class="mr-1">
-                                            <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                            <svg class="w-10 h-10 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
                                                 <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
                                                     points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                                             </svg>
                                         </span>
-                                        Health
+                                        Our website development service offers end-to-end solutions for creating and launching
                                     </li>
-                                    <li class="flex items-start">
+                                    <li class="flex items-start text-2xl my-6">
                                         <span class="mr-1">
-                                            <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                            <svg class="w-10 h-10 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
                                                 <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
                                                     points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                                             </svg>
                                         </span>
-                                        Reference
+                                        Our website development service offers end-to-end solutions
                                     </li>
                                 </ul>
                                 <a href="/" aria-label=""
@@ -93,12 +83,107 @@ const Services = () => {
                                 </a>
                             </div>
                         </div>
-                        <div>
+                        <div className='md:2/4'>
                             <Image src={website} alt="asdf" width="400" height="400"></Image>
+                        </div>
+                    </div>
+                    <div class="md:flex justify-between items-center">
+                        <div className='md:2/4'>
+                            <Image src={website} alt="asdf" width="400" height="400"></Image>
+                        </div>
+
+
+
+                        <div class="flex md:w-2/4 flex-col sm:flex-row my-32">
+
+                            <div>
+                                <h6 class="mb-10 font-semibold leading-5 text-4xl">Website Development</h6>
+
+                                <ul class="mb-4 -ml-1 space-y-2">
+                                    <li class="flex items-start text-2xl text-gray-700">
+                                        <span class="mr-1">
+                                            <svg class="w-10 h-10 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                                <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                            </svg>
+                                        </span>
+                                        Our website development service offers end-to-end  professional
+                                        and visually appealing websites.
+                                    </li>
+                                    <li class="flex items-start text-2xl my-3">
+                                        <span class="mr-1">
+                                            <svg class="w-10 h-10 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                                <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                            </svg>
+                                        </span>
+                                        Our website development service offers end-to-end solutions for creating and launching
+                                    </li>
+                                    <li class="flex items-start text-2xl my-6">
+                                        <span class="mr-1">
+                                            <svg class="w-10 h-10 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                                <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                            </svg>
+                                        </span>
+                                        Our website development service offers end-to-end solutions
+                                    </li>
+                                </ul>
+                                <a href="/" aria-label=""
+                                    class="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-green-800">Learn
+                                    more
+                                </a>
+                            </div>
                         </div>
 
                     </div>
 
+                    <div class="md:flex justify-between items-center">
+                        <div class="flex md:w-2/4 flex-col sm:flex-row">
+
+                            <div>
+                                <h6 class="mb-10 font-semibold leading-5 text-4xl">Website Development</h6>
+
+                                <ul class="mb-4 -ml-1 space-y-2">
+                                    <li class="flex items-start text-2xl text-gray-700">
+                                        <span class="mr-1">
+                                            <svg class="w-10 h-10 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                                <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                            </svg>
+                                        </span>
+                                        Our website development service offers end-to-end  professional
+                                        and visually appealing websites.
+                                    </li>
+                                    <li class="flex items-start text-2xl my-3">
+                                        <span class="mr-1">
+                                            <svg class="w-10 h-10 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                                <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                            </svg>
+                                        </span>
+                                        Our website development service offers end-to-end solutions for creating and launching
+                                    </li>
+                                    <li class="flex items-start text-2xl my-6">
+                                        <span class="mr-1">
+                                            <svg class="w-10 h-10 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                                <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                            </svg>
+                                        </span>
+                                        Our website development service offers end-to-end solutions
+                                    </li>
+                                </ul>
+                                <a href="/" aria-label=""
+                                    class="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-green-800">Learn
+                                    more
+                                </a>
+                            </div>
+                        </div>
+                        <div className='md:2/4'>
+                            <Image src={website} alt="asdf" width="400" height="400"></Image>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Container>

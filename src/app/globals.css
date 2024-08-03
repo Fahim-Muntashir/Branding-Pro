@@ -4,6 +4,6 @@
 
 @layer components {
     .btn-meet {
-        @apply bg-gradient-to-r shadow-xl from-second to-second text-white border-2 border-primary md:text-2xl font-bold md:px-4 px-2 py-2 rounded shadow-primary hover:shadow-lg;
+        @apply bg-gradient-to-r shadow-xl from-second to-second text-white border-2 border-primary md:text-2xl font-bold md:px-4 px-2 lg:py-2 py-1.5 rounded shadow-primary hover:shadow-lg;
     }
 }
