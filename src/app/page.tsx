@@ -1,6 +1,6 @@
 import Banner from "@/Sections/Banner";
 import Contact from "@/Sections/Contact";
-import Faq from "@/Sections/faq";
+import Faq from "@/Sections/Faq";
 import Meet from "@/Sections/Meet";
 import Services from "@/Sections/Services";
 
