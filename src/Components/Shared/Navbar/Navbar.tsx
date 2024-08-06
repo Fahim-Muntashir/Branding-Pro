@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP } from "react-icon
 import { BsYoutube } from 'react-icons/bs';
 import { FaXTwitter } from "react-icons/fa6";
 import Image from 'next/image';
-import logo from '@/../public/assests/dark-logo.svg';
+import logo from '@/../public/assests/dark-logo.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
 import Link from 'next/link';
