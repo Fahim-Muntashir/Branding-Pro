@@ -22,7 +22,7 @@ const banner = () => {
                                 <div className="w-full mt-20">
                                     <h1 className="text-2xl lg:text-2xl font-bold">Grow your <span className="text-green-500">Brand</span> <br /> more Than <span className="text-green-500">10x</span> with Branding Proo</h1>
                                     <div className="w-20 h-2 bg-green-700 my-4"></div>
-                                    <p className="text-6xl font-bold mb-10 text-dark">We Design America’s Most Trusted Roofing Websites & Brands
+                                    <p className="text-6xl font-bold mb-10 text-dark">We Design America’s Most Trusted Home Service  Websites & Brands
                                     </p>
                                     <Link href="#meet"
                                     >  <button className="btn-meet">Book A Free Call With Fahim</button></Link>
