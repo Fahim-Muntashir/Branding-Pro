@@ -88,7 +88,8 @@ const Navbar = () => {
                         </div>
                         <div className='text-dark'>
                             <Link href="/#meet">
-                                <button className='btn-meet shadow-none sm:text-lg'>Call Now</button>
+                                <button className='btn-meet shadow-none sm:text-lg hidden md:block'>Call Now
+                                </button>
                             </Link>
                             <button onClick={() => setOpen(true)} className={`text-2xl ${open ? "hidden" : ""} md:hidden px-3`}>
                                 <GiHamburgerMenu />
@@ -101,7 +102,7 @@ const Navbar = () => {
                 </Container>
             </div>
 
-            <div className={`${open ? 'w-[80%] ms-0 transition-all delay-150' : ''} bg-[#003461] px-3 py-10 text-white -ms-[500px] fixed h-screen flex flex-col z-50 justify-between`}>
+            <div className={`${open ? 'w-[80%] ms-0 transition-all delay-150' : ''} bg-[rgb(3,0,8)] px-3 py-10 text-white -ms-[500px] fixed h-screen flex flex-col z-50 justify-between`}>
                 <ul className="flex flex-col">
                     <li>
                         <Link href="/" className="block py-2 px-3 border-b my-1 border-b-gray-600" aria-current="page">Home</Link>
