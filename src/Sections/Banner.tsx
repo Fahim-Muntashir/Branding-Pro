@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const banner = () => {
     return (
-        <div style={{
+        <div className="bg-black" style={{
             backgroundImage: "url('https://i.ibb.co/m5j8F2N/bg.jpg')",
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
