@@ -31,7 +31,7 @@ const banner = () => {
                         </div>
                     </div>
                     <div className="col-span-5 sm:h-screen flex justify-center items-center" >
-                        <Image width={1000} src={growthImg} alt="website sales"></Image>
+                        <Image width={1400} src={growthImg} alt="website sales"></Image>
                     </div>
 
                 </div>
