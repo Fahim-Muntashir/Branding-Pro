@@ -68,7 +68,7 @@ const Navbar = () => {
                 <Container>
                     <div className='flex justify-between items-center py-4'>
                         <Link href='/'>
-                            <Image src={logo} width={280} height={100} alt='haven' />
+                            <Image src={logo} width={200} height={100} alt='haven' />
                         </Link>
                         <div className={`items-center justify-between hidden w-full md:flex md:w-auto`} id="navbar-sticky">
                             <ul className="flex text-dark flex-col p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
